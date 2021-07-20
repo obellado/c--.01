@@ -5,12 +5,18 @@
 #include "Weapon.hpp"
 
 int	main( void ){
-	HumanA A = HumanA("Valera");
-	HumanB B = HumanB("Albert");
-	Weapon W;
-	W.setType("knife");
-	B.takeWeapon(&W);
-	A.attack();
-	B.attack();
+	Weapon		club = Weapon("crude spiked club");
+	HumanA		bob("Bob", club);
+
+	bob.attack();
+	club.setType("some other type of club");
+	bob.attack();
+
+	club.setType("crude spiked club");
+	HumanB jim("Jim");
+	jim.setWeapon(club);
+	jim.attack();
+	club.setType("some other type of club");
+	jim.attack();
 	return (0);
 }

@@ -3,11 +3,13 @@
 #include "Weapon.hpp"
 
 Weapon::Weapon( void ){
-	std::cout << "Weapon constructor" << std::endl;
+}
+
+Weapon::Weapon( std::string type ){
+	this->_type = type;
 }
 
 Weapon::~Weapon( void ){
-	std::cout << "Weapon destructor" << std::endl;
 }
 
 std::string const & Weapon::getType( void ) {

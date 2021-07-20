@@ -6,18 +6,15 @@
 #    By: obellado <obellado@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/18 18:00:15 by obellado          #+#    #+#              #
-#    Updated: 2021/07/20 16:14:54 by obellado         ###   ########.fr        #
+#    Updated: 2021/07/20 19:50:36 by obellado         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	go
+NAME	=	sed
 
 CC		=	clang++ -Wall -Werror -Wextra
 
-SRCS	=	main.cpp \
-			Weapon.cpp \
-			HumanA.cpp \
-			HumanB.cpp
+SRCS	=	main.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 
