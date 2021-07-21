@@ -34,12 +34,23 @@ void Karen::complain( std::string level ){
 
 	for (int i = 0; i < 4; i++){
 		flag = level.compare(level_[i]);
-		switch (flag) {
-			case 0:
-				(this->*f[i])();
+		switch (flag){
+			case (false):
+				std::cout << "[ " << level << " ]" << std::endl;
+				switch (i){
+					case 0:
+						(this->*f[i++])();
+					case 1:
+						(this->*f[i++])();
+					case 2:
+						(this->*f[i++])();
+					case 3:
+						(this->*f[i++])();
 				return ;
-			default:
-				break ;
+				}
+			case (true):
+				break;
 		}
 	}
+	std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 }

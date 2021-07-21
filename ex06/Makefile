@@ -6,15 +6,16 @@
 #    By: obellado <obellado@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/18 18:00:15 by obellado          #+#    #+#              #
-#    Updated: 2021/07/20 19:50:36 by obellado         ###   ########.fr        #
+#    Updated: 2021/07/21 17:28:49 by obellado         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	sed
+NAME	=	karenFilter
 
 CC		=	clang++ -Wall -Werror -Wextra
 
-SRCS	=	main.cpp
+SRCS	=	main.cpp \
+			Karen.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 
